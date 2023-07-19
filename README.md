@@ -34,5 +34,22 @@ Options:
   -h Print this help message
 ```
 
+### Examples
+
+#### Encrypt text from `stdin`
+```shell
+secrets -e "super secret message" -o
+```
+
+#### Encrypt text from file
+```shell
+secrets -i /path/to/text/file -o
+```
+
+### Decrypt a message
+```shell
+secrets -d /path/to/encrypted/file.gpg
+```
+
 ## Licensing
 This program is licensed under the terms of the GNU GPLv3 or, at your option, any later version.
